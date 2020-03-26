@@ -117,3 +117,14 @@ class life {
         document.addEventListener('keydown', (event) => { this._checkQuit(event) })
     }
 }
+
+// ѕример запуска:
+// 1) с генерацией пол€:
+let newBoard = new life(10, 20, 1000)
+newBoard.render()
+
+// 2) с импортом пол€ по ссылке:
+let newBoard = new life(10, 20, 1000, true, "https://raw.githubusercontent.com/Iacox/life/master/modules/test.js")
+newBoard.render()
+
+// ƒл€ остановки работы скрипта нажать "Q" (проследить чтобы в фокусе было окно страницы, а не консоль)
